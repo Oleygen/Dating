@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'Dating' do
+
+pod 'Fabric', '1.7.13'
+pod 'Crashlytics', '3.10.9'
+pod 'KeychainSwift', '~> 13.0'
+pod 'SwiftyUserDefaults', '4.0.0-alpha.1'
+pod 'SnapKit', '~> 4.0.0'
+pod 'SwiftyRSA'
+pod 'RealmSwift'
+pod 'Bluebird', '~> 4.0'
+pod 'SVPinView'
+end

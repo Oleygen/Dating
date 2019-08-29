@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DISCOVER LOC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSa-FM-3RC">
+                                <rect key="frame" x="126" y="626" width="123.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_logo" translatesAutoresizingMaskIntoConstraints="NO" id="28I-iI-ndO">
+                                <rect key="frame" x="60" y="130" width="255" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="28I-iI-ndO" secondAttribute="height" multiplier="1:1" id="O2c-97-zss"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="28I-iI-ndO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-60" id="1bh-Jp-nI5"/>
+                            <constraint firstItem="28I-iI-ndO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="96l-XD-JEO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mSa-FM-3RC" secondAttribute="bottom" constant="20" id="Mf9-iC-zI8"/>
+                            <constraint firstItem="28I-iI-ndO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="3/4" id="Mlw-Of-Tto"/>
+                            <constraint firstItem="mSa-FM-3RC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Nr5-MO-5IX"/>
+                            <constraint firstItem="28I-iI-ndO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kaf-Dl-aGh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch_logo" width="1280" height="1319"/>
+    </resources>
+</document>
