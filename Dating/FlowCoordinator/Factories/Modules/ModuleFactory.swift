@@ -11,33 +11,58 @@ import UIKit
 
 final class ModuleFactory {}
 
-
-
 extension ModuleFactory: AuthModuleFactory {
-    static func createLogin() -> LoginInputHandler {
-        
+    
+    static func createAuthTypeScreen() -> AuthTypeInputHandler {
+        let view = AuthTypeView()
+        let model = AuthTypeModel()
+        let controller = AuthTypeController(baseView: view, baseModel: model)
+        return controller
+    }
+    
+    static func createGenderScreen() -> GenderInputHandler {
+        let view = GenderView()
+        let model = GenderModel()
+        let controller = GenderController(baseView: view, baseModel: model)
+        return controller
+    }
+    static func createBirthdayScreen() -> BirthdayInputHandler {
+        let view = BirthdayView()
+        let model = BirthdayModel()
+        let controller = BirthdayController(baseView: view, baseModel: model)
+        return controller
+    }
+    static func createNameScreen() -> NameInputHandler {
+        let view = NameView()
+        let model = NameModel()
+        let controller = NameController(baseView: view, baseModel: model)
+        return controller
+    }
+    static func createEmailScreen() -> EmailInputHandler {
+        let view = EmailView()
+        let model = EmailModel()
+        let controller = EmailController(baseView: view, baseModel: model)
+        return controller
+    }
+    static func createPasswordScreen() -> PasswordInputHandler {
+        let view = PasswordView()
+        let model = PasswordModel()
+        let controller = PasswordController(baseView: view, baseModel: model)
+        return controller
+    }
+    static func createPickPhotoScreen() -> PickPhotoInputHandler {
+        let view = PickPhotoView()
+        let model = PickPhotoModel()
+        let controller = PickPhotoController(baseView: view, baseModel: model)
+        return controller
+    }
+    
+    static func createLoginScreen() -> LoginInputHandler {
         let view = LoginView()
         let model = LoginModel()
         let controller = LoginController(baseView: view, baseModel: model)
         return controller
     }
-    
-    static func createRegister() -> RegisterInputHandler {
-        let view = RegisterView()
-        let model = RegisterModel()
-        let controller = RegisterController(baseView: view, baseModel: model)
-        return controller
-        
-    }
-    
-    static func createForgot() -> ForgotInputHandler {
-        let view = ForgotView()
-        let model = ForgotModel()
-        let controller = ForgotController(baseView: view, baseModel: model)
-        return controller
-    }
-    
-    
 }
 
 extension ModuleFactory: MenuModuleFactory {

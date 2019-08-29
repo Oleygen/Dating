@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		16DFC4E7010EBFDDA72C0885 /* Pods_Dating.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFDAEFD7EA27BD697F51924 /* Pods_Dating.framework */; };
+		585E0A73231770E100F6502E /* LoginInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585E0A72231770E100F6502E /* LoginInputHandler.swift */; };
+		585E0A75231770E600F6502E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585E0A74231770E600F6502E /* LoginView.swift */; };
+		585E0A77231770EA00F6502E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585E0A76231770EA00F6502E /* LoginModel.swift */; };
+		585E0A79231770F000F6502E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585E0A78231770F000F6502E /* LoginController.swift */; };
+		585E0A7B231770F800F6502E /* AuthTypeInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585E0A7A231770F800F6502E /* AuthTypeInputHandler.swift */; };
+		585E0A7D231770FD00F6502E /* AuthTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585E0A7C231770FD00F6502E /* AuthTypeView.swift */; };
+		585E0A7F2317710200F6502E /* AuthTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585E0A7E2317710200F6502E /* AuthTypeController.swift */; };
+		585E0A812317710800F6502E /* AuthTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585E0A802317710800F6502E /* AuthTypeModel.swift */; };
+		585E0A832317725F00F6502E /* AuthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585E0A822317725F00F6502E /* AuthType.swift */; };
+		585E0A872317778D00F6502E /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585E0A862317778D00F6502E /* Gender.swift */; };
 		5886912023173CF400770B57 /* RealmSwift+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868F5023173CF300770B57 /* RealmSwift+Codable.swift */; };
 		5886912123173CF400770B57 /* UITextField+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868F5123173CF300770B57 /* UITextField+Validation.swift */; };
 		5886912223173CF400770B57 /* DefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868F5223173CF300770B57 /* DefaultsKeys.swift */; };
@@ -38,8 +48,6 @@
 		5886914323173CF400770B57 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868F8623173CF300770B57 /* TransitionType.swift */; };
 		5886914423173CF400770B57 /* TabbedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868F8723173CF300770B57 /* TabbedCoordinator.swift */; };
 		5886914523173CF400770B57 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868F8823173CF300770B57 /* Coordinator.swift */; };
-		5886914F23173CF400770B57 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868F9A23173CF300770B57 /* AuthCoordinator.swift */; };
-		5886915023173CF400770B57 /* AuthCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868F9B23173CF300770B57 /* AuthCoordinatorOutput.swift */; };
 		5886915723173CF400770B57 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868FA623173CF300770B57 /* TabBarCoordinator.swift */; };
 		5886915823173CF400770B57 /* TabBarCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868FA723173CF300770B57 /* TabBarCoordinatorOutput.swift */; };
 		5886915B23173CF400770B57 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868FAC23173CF300770B57 /* ApplicationCoordinator.swift */; };
@@ -48,7 +56,6 @@
 		5886915E23173CF400770B57 /* OnboardingCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868FB023173CF300770B57 /* OnboardingCoordinatorOutput.swift */; };
 		5886915F23173CF400770B57 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868FB323173CF300770B57 /* CoordinatorFactory.swift */; };
 		5886916223173CF400770B57 /* SettingsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868FBA23173CF300770B57 /* SettingsModuleFactory.swift */; };
-		5886916423173CF400770B57 /* AuthModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868FBE23173CF300770B57 /* AuthModuleFactory.swift */; };
 		5886916523173CF400770B57 /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868FBF23173CF300770B57 /* ModuleFactory.swift */; };
 		5886916B23173CF400770B57 /* OnboardingModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868FCB23173CF300770B57 /* OnboardingModuleFactory.swift */; };
 		5886916C23173CF400770B57 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58868FCD23173CF300770B57 /* NavigationRouter.swift */; };
@@ -113,18 +120,6 @@
 		588691B523173CF500770B57 /* LoggedInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886903023173CF400770B57 /* LoggedInputHandler.swift */; };
 		588691B623173CF500770B57 /* LoggedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886903123173CF400770B57 /* LoggedController.swift */; };
 		588691BD23173CF500770B57 /* InitialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886903B23173CF400770B57 /* InitialModel.swift */; };
-		588691BE23173CF500770B57 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886903E23173CF400770B57 /* RegisterController.swift */; };
-		588691BF23173CF500770B57 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886903F23173CF400770B57 /* RegisterModel.swift */; };
-		588691C023173CF500770B57 /* RegisterInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886904023173CF400770B57 /* RegisterInputHandler.swift */; };
-		588691C123173CF500770B57 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886904123173CF400770B57 /* RegisterView.swift */; };
-		588691C223173CF500770B57 /* ForgotInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886904323173CF400770B57 /* ForgotInputHandler.swift */; };
-		588691C323173CF500770B57 /* ForgotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886904423173CF400770B57 /* ForgotModel.swift */; };
-		588691C423173CF500770B57 /* ForgotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886904523173CF400770B57 /* ForgotView.swift */; };
-		588691C523173CF500770B57 /* ForgotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886904623173CF400770B57 /* ForgotController.swift */; };
-		588691C623173CF500770B57 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886904823173CF400770B57 /* LoginModel.swift */; };
-		588691C723173CF500770B57 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886904923173CF400770B57 /* LoginView.swift */; };
-		588691C823173CF500770B57 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886904A23173CF400770B57 /* LoginController.swift */; };
-		588691C923173CF500770B57 /* LoginInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886904B23173CF400770B57 /* LoginInputHandler.swift */; };
 		588691EA23173CF500770B57 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886907723173CF400770B57 /* TabBarView.swift */; };
 		588691EB23173CF500770B57 /* TabBarInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886907823173CF400770B57 /* TabBarInputHandler.swift */; };
 		588691EC23173CF500770B57 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886907923173CF400770B57 /* TabBarController.swift */; };
@@ -173,6 +168,34 @@
 		588692A2231748C500770B57 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692A1231748C500770B57 /* SearchModel.swift */; };
 		588692A4231748CE00770B57 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692A3231748CE00770B57 /* SearchView.swift */; };
 		588692A6231748D400770B57 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692A5231748D400770B57 /* SearchController.swift */; };
+		588692AF2317573000770B57 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692AE2317573000770B57 /* AuthCoordinator.swift */; };
+		588692B12317573900770B57 /* AuthCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692B02317573900770B57 /* AuthCoordinatorOutput.swift */; };
+		588692B8231757C800770B57 /* AuthResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692B7231757C800770B57 /* AuthResult.swift */; };
+		588692BC23175B8D00770B57 /* AuthModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692BB23175B8D00770B57 /* AuthModuleFactory.swift */; };
+		588692C723175D4C00770B57 /* GenderInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692C623175D4C00770B57 /* GenderInputHandler.swift */; };
+		588692C923175D5100770B57 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692C823175D5100770B57 /* GenderView.swift */; };
+		588692CB23175D5700770B57 /* GenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692CA23175D5700770B57 /* GenderModel.swift */; };
+		588692CD23175D5D00770B57 /* GenderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692CC23175D5D00770B57 /* GenderController.swift */; };
+		588692CF23175D6600770B57 /* BirthdayInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692CE23175D6600770B57 /* BirthdayInputHandler.swift */; };
+		588692D123175D6F00770B57 /* BirthdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692D023175D6F00770B57 /* BirthdayView.swift */; };
+		588692D323175D7300770B57 /* BirthdayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692D223175D7300770B57 /* BirthdayModel.swift */; };
+		588692D523175D7800770B57 /* BirthdayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692D423175D7800770B57 /* BirthdayController.swift */; };
+		588692D723175D7E00770B57 /* NameInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692D623175D7E00770B57 /* NameInputHandler.swift */; };
+		588692D923175D8200770B57 /* NameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692D823175D8200770B57 /* NameModel.swift */; };
+		588692DB23175D8600770B57 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692DA23175D8600770B57 /* NameView.swift */; };
+		588692DD23175D8B00770B57 /* NameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692DC23175D8B00770B57 /* NameController.swift */; };
+		588692DF23175D9300770B57 /* EmailInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692DE23175D9300770B57 /* EmailInputHandler.swift */; };
+		588692E123175D9600770B57 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692E023175D9600770B57 /* EmailView.swift */; };
+		588692E323175D9C00770B57 /* EmailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692E223175D9C00770B57 /* EmailModel.swift */; };
+		588692E523175DA000770B57 /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692E423175DA000770B57 /* EmailController.swift */; };
+		588692E723175DA800770B57 /* PasswordInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692E623175DA800770B57 /* PasswordInputHandler.swift */; };
+		588692E923175DAD00770B57 /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692E823175DAD00770B57 /* PasswordView.swift */; };
+		588692EB23175DB200770B57 /* PasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692EA23175DB200770B57 /* PasswordModel.swift */; };
+		588692ED23175DB800770B57 /* PasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692EC23175DB800770B57 /* PasswordController.swift */; };
+		588692EF23175DC400770B57 /* PickPhotoInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692EE23175DC400770B57 /* PickPhotoInputHandler.swift */; };
+		588692F123175DC900770B57 /* PickPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692F023175DC900770B57 /* PickPhotoView.swift */; };
+		588692F323175DCE00770B57 /* PickPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692F223175DCE00770B57 /* PickPhotoModel.swift */; };
+		588692F523175DD200770B57 /* PickPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588692F423175DD200770B57 /* PickPhotoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -190,6 +213,16 @@
 
 /* Begin PBXFileReference section */
 		0D76669F73010CCAC6BF1334 /* Pods-Dating.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dating.debug.xcconfig"; path = "Target Support Files/Pods-Dating/Pods-Dating.debug.xcconfig"; sourceTree = "<group>"; };
+		585E0A72231770E100F6502E /* LoginInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInputHandler.swift; sourceTree = "<group>"; };
+		585E0A74231770E600F6502E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		585E0A76231770EA00F6502E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		585E0A78231770F000F6502E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		585E0A7A231770F800F6502E /* AuthTypeInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTypeInputHandler.swift; sourceTree = "<group>"; };
+		585E0A7C231770FD00F6502E /* AuthTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTypeView.swift; sourceTree = "<group>"; };
+		585E0A7E2317710200F6502E /* AuthTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTypeController.swift; sourceTree = "<group>"; };
+		585E0A802317710800F6502E /* AuthTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTypeModel.swift; sourceTree = "<group>"; };
+		585E0A822317725F00F6502E /* AuthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthType.swift; sourceTree = "<group>"; };
+		585E0A862317778D00F6502E /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		58868EE8231561A900770B57 /* Dating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58868F5023173CF300770B57 /* RealmSwift+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RealmSwift+Codable.swift"; sourceTree = "<group>"; };
 		58868F5123173CF300770B57 /* UITextField+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Validation.swift"; sourceTree = "<group>"; };
@@ -221,8 +254,6 @@
 		58868F8623173CF300770B57 /* TransitionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionType.swift; sourceTree = "<group>"; };
 		58868F8723173CF300770B57 /* TabbedCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbedCoordinator.swift; sourceTree = "<group>"; };
 		58868F8823173CF300770B57 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		58868F9A23173CF300770B57 /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
-		58868F9B23173CF300770B57 /* AuthCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorOutput.swift; sourceTree = "<group>"; };
 		58868FA623173CF300770B57 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		58868FA723173CF300770B57 /* TabBarCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorOutput.swift; sourceTree = "<group>"; };
 		58868FAC23173CF300770B57 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
@@ -231,7 +262,6 @@
 		58868FB023173CF300770B57 /* OnboardingCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorOutput.swift; sourceTree = "<group>"; };
 		58868FB323173CF300770B57 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		58868FBA23173CF300770B57 /* SettingsModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsModuleFactory.swift; sourceTree = "<group>"; };
-		58868FBE23173CF300770B57 /* AuthModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthModuleFactory.swift; sourceTree = "<group>"; };
 		58868FBF23173CF300770B57 /* ModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
 		58868FCB23173CF300770B57 /* OnboardingModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingModuleFactory.swift; sourceTree = "<group>"; };
 		58868FCD23173CF300770B57 /* NavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
@@ -297,18 +327,6 @@
 		5886903023173CF400770B57 /* LoggedInputHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInputHandler.swift; sourceTree = "<group>"; };
 		5886903123173CF400770B57 /* LoggedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedController.swift; sourceTree = "<group>"; };
 		5886903B23173CF400770B57 /* InitialModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialModel.swift; sourceTree = "<group>"; };
-		5886903E23173CF400770B57 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
-		5886903F23173CF400770B57 /* RegisterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
-		5886904023173CF400770B57 /* RegisterInputHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterInputHandler.swift; sourceTree = "<group>"; };
-		5886904123173CF400770B57 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		5886904323173CF400770B57 /* ForgotInputHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotInputHandler.swift; sourceTree = "<group>"; };
-		5886904423173CF400770B57 /* ForgotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotModel.swift; sourceTree = "<group>"; };
-		5886904523173CF400770B57 /* ForgotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotView.swift; sourceTree = "<group>"; };
-		5886904623173CF400770B57 /* ForgotController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotController.swift; sourceTree = "<group>"; };
-		5886904823173CF400770B57 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
-		5886904923173CF400770B57 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		5886904A23173CF400770B57 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		5886904B23173CF400770B57 /* LoginInputHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInputHandler.swift; sourceTree = "<group>"; };
 		5886907723173CF400770B57 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		5886907823173CF400770B57 /* TabBarInputHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarInputHandler.swift; sourceTree = "<group>"; };
 		5886907923173CF400770B57 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -357,6 +375,34 @@
 		588692A1231748C500770B57 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		588692A3231748CE00770B57 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		588692A5231748D400770B57 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		588692AE2317573000770B57 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		588692B02317573900770B57 /* AuthCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorOutput.swift; sourceTree = "<group>"; };
+		588692B7231757C800770B57 /* AuthResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResult.swift; sourceTree = "<group>"; };
+		588692BB23175B8D00770B57 /* AuthModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModuleFactory.swift; sourceTree = "<group>"; };
+		588692C623175D4C00770B57 /* GenderInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderInputHandler.swift; sourceTree = "<group>"; };
+		588692C823175D5100770B57 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		588692CA23175D5700770B57 /* GenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderModel.swift; sourceTree = "<group>"; };
+		588692CC23175D5D00770B57 /* GenderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderController.swift; sourceTree = "<group>"; };
+		588692CE23175D6600770B57 /* BirthdayInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayInputHandler.swift; sourceTree = "<group>"; };
+		588692D023175D6F00770B57 /* BirthdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayView.swift; sourceTree = "<group>"; };
+		588692D223175D7300770B57 /* BirthdayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayModel.swift; sourceTree = "<group>"; };
+		588692D423175D7800770B57 /* BirthdayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayController.swift; sourceTree = "<group>"; };
+		588692D623175D7E00770B57 /* NameInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputHandler.swift; sourceTree = "<group>"; };
+		588692D823175D8200770B57 /* NameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameModel.swift; sourceTree = "<group>"; };
+		588692DA23175D8600770B57 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		588692DC23175D8B00770B57 /* NameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameController.swift; sourceTree = "<group>"; };
+		588692DE23175D9300770B57 /* EmailInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailInputHandler.swift; sourceTree = "<group>"; };
+		588692E023175D9600770B57 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		588692E223175D9C00770B57 /* EmailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailModel.swift; sourceTree = "<group>"; };
+		588692E423175DA000770B57 /* EmailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailController.swift; sourceTree = "<group>"; };
+		588692E623175DA800770B57 /* PasswordInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputHandler.swift; sourceTree = "<group>"; };
+		588692E823175DAD00770B57 /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
+		588692EA23175DB200770B57 /* PasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordModel.swift; sourceTree = "<group>"; };
+		588692EC23175DB800770B57 /* PasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordController.swift; sourceTree = "<group>"; };
+		588692EE23175DC400770B57 /* PickPhotoInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickPhotoInputHandler.swift; sourceTree = "<group>"; };
+		588692F023175DC900770B57 /* PickPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickPhotoView.swift; sourceTree = "<group>"; };
+		588692F223175DCE00770B57 /* PickPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickPhotoModel.swift; sourceTree = "<group>"; };
+		588692F423175DD200770B57 /* PickPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickPhotoController.swift; sourceTree = "<group>"; };
 		AC04157883B7D36A6F45A99F /* Pods-Dating.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dating.release.xcconfig"; path = "Target Support Files/Pods-Dating/Pods-Dating.release.xcconfig"; sourceTree = "<group>"; };
 		EDFDAEFD7EA27BD697F51924 /* Pods_Dating.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dating.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -380,6 +426,44 @@
 				AC04157883B7D36A6F45A99F /* Pods-Dating.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		585E0A70231770D600F6502E /* AuthType */ = {
+			isa = PBXGroup;
+			children = (
+				585E0A7A231770F800F6502E /* AuthTypeInputHandler.swift */,
+				585E0A7C231770FD00F6502E /* AuthTypeView.swift */,
+				585E0A7E2317710200F6502E /* AuthTypeController.swift */,
+				585E0A802317710800F6502E /* AuthTypeModel.swift */,
+			);
+			path = AuthType;
+			sourceTree = "<group>";
+		};
+		585E0A71231770DA00F6502E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				585E0A72231770E100F6502E /* LoginInputHandler.swift */,
+				585E0A74231770E600F6502E /* LoginView.swift */,
+				585E0A76231770EA00F6502E /* LoginModel.swift */,
+				585E0A78231770F000F6502E /* LoginController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		585E0A842317726500F6502E /* AuthType */ = {
+			isa = PBXGroup;
+			children = (
+				585E0A822317725F00F6502E /* AuthType.swift */,
+			);
+			path = AuthType;
+			sourceTree = "<group>";
+		};
+		585E0A852317778700F6502E /* Gender */ = {
+			isa = PBXGroup;
+			children = (
+				585E0A862317778D00F6502E /* Gender.swift */,
+			);
+			path = Gender;
 			sourceTree = "<group>";
 		};
 		58868EDF231561A900770B57 = {
@@ -601,25 +685,16 @@
 		58868F8A23173CF300770B57 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				588692AC2317571900770B57 /* Auth */,
 				588692642317449E00770B57 /* Menu */,
 				588692632317449B00770B57 /* Chats */,
 				588692622317449700770B57 /* Game */,
 				588692612317449200770B57 /* Search */,
-				58868F9923173CF300770B57 /* Auth */,
 				58868FA523173CF300770B57 /* TabBar */,
 				58868FAB23173CF300770B57 /* Application */,
 				58868FAE23173CF300770B57 /* Onboarding */,
 			);
 			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		58868F9923173CF300770B57 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				58868F9A23173CF300770B57 /* AuthCoordinator.swift */,
-				58868F9B23173CF300770B57 /* AuthCoordinatorOutput.swift */,
-			);
-			path = Auth;
 			sourceTree = "<group>";
 		};
 		58868FA523173CF300770B57 /* TabBar */ = {
@@ -669,12 +744,12 @@
 		58868FB423173CF300770B57 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				588692BA23175B7F00770B57 /* Auth */,
 				588692782317478800770B57 /* Search */,
 				588692772317478300770B57 /* Game */,
 				588692762317477F00770B57 /* Chats */,
 				588692752317477C00770B57 /* Menu */,
 				58868FB923173CF300770B57 /* Settings */,
-				58868FBD23173CF300770B57 /* Auth */,
 				58868FBF23173CF300770B57 /* ModuleFactory.swift */,
 				58868FCA23173CF300770B57 /* Onboarding */,
 			);
@@ -687,14 +762,6 @@
 				58868FBA23173CF300770B57 /* SettingsModuleFactory.swift */,
 			);
 			path = Settings;
-			sourceTree = "<group>";
-		};
-		58868FBD23173CF300770B57 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				58868FBE23173CF300770B57 /* AuthModuleFactory.swift */,
-			);
-			path = Auth;
 			sourceTree = "<group>";
 		};
 		58868FCA23173CF300770B57 /* Onboarding */ = {
@@ -744,6 +811,9 @@
 		58868FDF23173CF300770B57 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				585E0A852317778700F6502E /* Gender */,
+				585E0A842317726500F6502E /* AuthType */,
+				588692B62317579100770B57 /* AuthResult */,
 				58868FE023173CF300770B57 /* ViewModel */,
 				58868FEC23173CF300770B57 /* ShakeQuery */,
 				58868FEE23173CF300770B57 /* Shake */,
@@ -918,13 +988,13 @@
 		5886901723173CF400770B57 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				588692BF23175C8E00770B57 /* Auth */,
 				588692842317483600770B57 /* Menu */,
 				588692832317483300770B57 /* Chats */,
 				588692822317482B00770B57 /* Game */,
 				588692812317482400770B57 /* Search */,
 				5886902723173CF400770B57 /* Settings */,
 				5886903A23173CF400770B57 /* Initial */,
-				5886903C23173CF400770B57 /* Auth */,
 				5886907623173CF400770B57 /* TabBar */,
 				588690B523173CF400770B57 /* Root */,
 				588690DA23173CF400770B57 /* Onboarding */,
@@ -969,49 +1039,6 @@
 				5886903B23173CF400770B57 /* InitialModel.swift */,
 			);
 			path = Initial;
-			sourceTree = "<group>";
-		};
-		5886903C23173CF400770B57 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				5886903D23173CF400770B57 /* Register */,
-				5886904223173CF400770B57 /* Forgot */,
-				5886904723173CF400770B57 /* Login */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		5886903D23173CF400770B57 /* Register */ = {
-			isa = PBXGroup;
-			children = (
-				5886903E23173CF400770B57 /* RegisterController.swift */,
-				5886903F23173CF400770B57 /* RegisterModel.swift */,
-				5886904023173CF400770B57 /* RegisterInputHandler.swift */,
-				5886904123173CF400770B57 /* RegisterView.swift */,
-			);
-			path = Register;
-			sourceTree = "<group>";
-		};
-		5886904223173CF400770B57 /* Forgot */ = {
-			isa = PBXGroup;
-			children = (
-				5886904323173CF400770B57 /* ForgotInputHandler.swift */,
-				5886904423173CF400770B57 /* ForgotModel.swift */,
-				5886904523173CF400770B57 /* ForgotView.swift */,
-				5886904623173CF400770B57 /* ForgotController.swift */,
-			);
-			path = Forgot;
-			sourceTree = "<group>";
-		};
-		5886904723173CF400770B57 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				5886904823173CF400770B57 /* LoginModel.swift */,
-				5886904923173CF400770B57 /* LoginView.swift */,
-				5886904A23173CF400770B57 /* LoginController.swift */,
-				5886904B23173CF400770B57 /* LoginInputHandler.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		5886907623173CF400770B57 /* TabBar */ = {
@@ -1197,6 +1224,112 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		588692AC2317571900770B57 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				588692AE2317573000770B57 /* AuthCoordinator.swift */,
+				588692B02317573900770B57 /* AuthCoordinatorOutput.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		588692B62317579100770B57 /* AuthResult */ = {
+			isa = PBXGroup;
+			children = (
+				588692B7231757C800770B57 /* AuthResult.swift */,
+			);
+			path = AuthResult;
+			sourceTree = "<group>";
+		};
+		588692BA23175B7F00770B57 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				588692BB23175B8D00770B57 /* AuthModuleFactory.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		588692BF23175C8E00770B57 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				585E0A71231770DA00F6502E /* Login */,
+				585E0A70231770D600F6502E /* AuthType */,
+				588692C523175D4200770B57 /* PickPhoto */,
+				588692C423175D3E00770B57 /* Password */,
+				588692C323175D3800770B57 /* Email */,
+				588692C223175D3500770B57 /* Name */,
+				588692C123175D3100770B57 /* Birthday */,
+				588692C023175D2D00770B57 /* Gender */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		588692C023175D2D00770B57 /* Gender */ = {
+			isa = PBXGroup;
+			children = (
+				588692C623175D4C00770B57 /* GenderInputHandler.swift */,
+				588692C823175D5100770B57 /* GenderView.swift */,
+				588692CA23175D5700770B57 /* GenderModel.swift */,
+				588692CC23175D5D00770B57 /* GenderController.swift */,
+			);
+			path = Gender;
+			sourceTree = "<group>";
+		};
+		588692C123175D3100770B57 /* Birthday */ = {
+			isa = PBXGroup;
+			children = (
+				588692CE23175D6600770B57 /* BirthdayInputHandler.swift */,
+				588692D023175D6F00770B57 /* BirthdayView.swift */,
+				588692D223175D7300770B57 /* BirthdayModel.swift */,
+				588692D423175D7800770B57 /* BirthdayController.swift */,
+			);
+			path = Birthday;
+			sourceTree = "<group>";
+		};
+		588692C223175D3500770B57 /* Name */ = {
+			isa = PBXGroup;
+			children = (
+				588692D623175D7E00770B57 /* NameInputHandler.swift */,
+				588692D823175D8200770B57 /* NameModel.swift */,
+				588692DA23175D8600770B57 /* NameView.swift */,
+				588692DC23175D8B00770B57 /* NameController.swift */,
+			);
+			path = Name;
+			sourceTree = "<group>";
+		};
+		588692C323175D3800770B57 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				588692DE23175D9300770B57 /* EmailInputHandler.swift */,
+				588692E023175D9600770B57 /* EmailView.swift */,
+				588692E223175D9C00770B57 /* EmailModel.swift */,
+				588692E423175DA000770B57 /* EmailController.swift */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		588692C423175D3E00770B57 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				588692E623175DA800770B57 /* PasswordInputHandler.swift */,
+				588692E823175DAD00770B57 /* PasswordView.swift */,
+				588692EA23175DB200770B57 /* PasswordModel.swift */,
+				588692EC23175DB800770B57 /* PasswordController.swift */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		588692C523175D4200770B57 /* PickPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				588692EE23175DC400770B57 /* PickPhotoInputHandler.swift */,
+				588692F023175DC900770B57 /* PickPhotoView.swift */,
+				588692F223175DCE00770B57 /* PickPhotoModel.swift */,
+				588692F423175DD200770B57 /* PickPhotoController.swift */,
+			);
+			path = PickPhoto;
+			sourceTree = "<group>";
+		};
 		E3EECBE04B6066C329BCC3A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1332,93 +1465,108 @@
 				5886917823173CF400770B57 /* BaseTableSectionView.swift in Sources */,
 				58869274231744E100770B57 /* SearchCoordinatorOutput.swift in Sources */,
 				5886919A23173CF400770B57 /* EmailRecord.swift in Sources */,
+				588692EF23175DC400770B57 /* PickPhotoInputHandler.swift in Sources */,
 				5886914323173CF400770B57 /* TransitionType.swift in Sources */,
 				588691B323173CF500770B57 /* LoggedView.swift in Sources */,
 				5886921D23173CF500770B57 /* RootView.swift in Sources */,
 				5886923E23173CF500770B57 /* OnboardingPageModel.swift in Sources */,
 				5886924823173CF500770B57 /* NetworkWorker.swift in Sources */,
 				5886918F23173CF400770B57 /* ResponseModelWithId.swift in Sources */,
+				588692E323175D9C00770B57 /* EmailModel.swift in Sources */,
+				588692EB23175DB200770B57 /* PasswordModel.swift in Sources */,
+				588692F523175DD200770B57 /* PickPhotoController.swift in Sources */,
 				5886918B23173CF400770B57 /* Comment.swift in Sources */,
 				5886919623173CF400770B57 /* GetPublishCodeResponseModel.swift in Sources */,
 				588692862317486800770B57 /* MenuInputHandler.swift in Sources */,
 				5886916B23173CF400770B57 /* OnboardingModuleFactory.swift in Sources */,
 				5886912F23173CF400770B57 /* ShakeHistoryVersionService.swift in Sources */,
+				585E0A7F2317710200F6502E /* AuthTypeController.swift in Sources */,
 				5886913223173CF400770B57 /* BiometricAuthenticator.swift in Sources */,
+				585E0A75231770E600F6502E /* LoginView.swift in Sources */,
+				585E0A872317778D00F6502E /* Gender.swift in Sources */,
+				588692B12317573900770B57 /* AuthCoordinatorOutput.swift in Sources */,
 				588692982317489D00770B57 /* GameModel.swift in Sources */,
 				5886917923173CF400770B57 /* FullScreenView.swift in Sources */,
 				5886912523173CF400770B57 /* DateFormatter+Server.swift in Sources */,
 				58869280231747AC00770B57 /* MenuModuleFactory.swift in Sources */,
 				5886927A2317479800770B57 /* SearchModuleFactory.swift in Sources */,
-				588691C623173CF500770B57 /* LoginModel.swift in Sources */,
 				5886913023173CF400770B57 /* ShakeService.swift in Sources */,
 				5886918E23173CF400770B57 /* GetShakeResponseModel.swift in Sources */,
-				588691C823173CF500770B57 /* LoginController.swift in Sources */,
+				588692D323175D7300770B57 /* BirthdayModel.swift in Sources */,
 				5886927C2317479F00770B57 /* GameModuleFactory.swift in Sources */,
 				5886919B23173CF400770B57 /* ExpandableContact.swift in Sources */,
+				585E0A77231770EA00F6502E /* LoginModel.swift in Sources */,
 				5886919223173CF400770B57 /* GetShakeSignaturesResponseModel.swift in Sources */,
 				5886926A231744B800770B57 /* ChatsCoordinator.swift in Sources */,
-				588691C423173CF500770B57 /* ForgotView.swift in Sources */,
 				5886913323173CF400770B57 /* BiometricAuthenticatorConfig.swift in Sources */,
+				588692E123175D9600770B57 /* EmailView.swift in Sources */,
 				5886921E23173CF500770B57 /* RootModel.swift in Sources */,
 				5886923923173CF500770B57 /* OnboardingContentController.swift in Sources */,
-				588691BE23173CF500770B57 /* RegisterController.swift in Sources */,
 				5886917F23173CF400770B57 /* SignedShakeViewModel.swift in Sources */,
 				588692902317488800770B57 /* ChatsModel.swift in Sources */,
+				585E0A79231770F000F6502E /* LoginController.swift in Sources */,
 				5886918323173CF400770B57 /* ContactHeaderViewModel.swift in Sources */,
+				588692DB23175D8600770B57 /* NameView.swift in Sources */,
 				588691B023173CF500770B57 /* UnloggedInputHandler.swift in Sources */,
 				588691BD23173CF500770B57 /* InitialModel.swift in Sources */,
 				5886925A23173CF500770B57 /* Task.swift in Sources */,
 				5886913523173CF400770B57 /* SessionService.swift in Sources */,
 				5886919323173CF400770B57 /* GetShakeWithCodeResponseModel.swift in Sources */,
-				5886915023173CF400770B57 /* AuthCoordinatorOutput.swift in Sources */,
 				5886919E23173CF400770B57 /* ValidityCondition.swift in Sources */,
+				588692D123175D6F00770B57 /* BirthdayView.swift in Sources */,
 				5886917623173CF400770B57 /* NetworkingModel.swift in Sources */,
 				5886913123173CF400770B57 /* TemplateService.swift in Sources */,
+				588692CB23175D5700770B57 /* GenderModel.swift in Sources */,
 				588692942317489300770B57 /* ChatsController.swift in Sources */,
 				5886919823173CF400770B57 /* SelectedContacts.swift in Sources */,
+				588692CD23175D5D00770B57 /* GenderController.swift in Sources */,
+				588692DF23175D9300770B57 /* EmailInputHandler.swift in Sources */,
 				5886929C231748A700770B57 /* GameController.swift in Sources */,
 				5886926C231744BD00770B57 /* ChatsCoordinatorOutput.swift in Sources */,
 				5886912023173CF400770B57 /* RealmSwift+Codable.swift in Sources */,
-				588691C223173CF500770B57 /* ForgotInputHandler.swift in Sources */,
 				5886916D23173CF400770B57 /* TabRouter.swift in Sources */,
 				588691AF23173CF500770B57 /* UnloggedView.swift in Sources */,
+				588692DD23175D8B00770B57 /* NameController.swift in Sources */,
 				5886914523173CF400770B57 /* Coordinator.swift in Sources */,
 				5886917523173CF400770B57 /* ViewConstants.swift in Sources */,
-				5886914F23173CF400770B57 /* AuthCoordinator.swift in Sources */,
 				5886925223173CF500770B57 /* BaseNetworkClient.swift in Sources */,
 				5886912323173CF400770B57 /* Array+RemoveDuplication.swift in Sources */,
 				588691EC23173CF500770B57 /* TabBarController.swift in Sources */,
+				588692C923175D5100770B57 /* GenderView.swift in Sources */,
 				5886915C23173CF400770B57 /* DeepLinkOption.swift in Sources */,
 				58869266231744A500770B57 /* MenuCoordinator.swift in Sources */,
 				5886917423173CF400770B57 /* Constants.swift in Sources */,
 				588691A223173CF400770B57 /* DeclinedInfo.swift in Sources */,
 				5886912D23173CF400770B57 /* DeclinedInfoService.swift in Sources */,
 				5886917123173CF400770B57 /* ApplicationError.swift in Sources */,
-				588691BF23173CF500770B57 /* RegisterModel.swift in Sources */,
 				5886929E231748AE00770B57 /* SearchInputHandler.swift in Sources */,
 				5886913F23173CF400770B57 /* InputHandler.swift in Sources */,
 				5886917E23173CF400770B57 /* ContactViewModel.swift in Sources */,
 				5886915723173CF400770B57 /* TabBarCoordinator.swift in Sources */,
 				5886917723173CF400770B57 /* BaseController.swift in Sources */,
+				588692D523175D7800770B57 /* BirthdayController.swift in Sources */,
 				588691A123173CF400770B57 /* Customer.swift in Sources */,
 				5886916E23173CF400770B57 /* PlainRouter.swift in Sources */,
-				5886916423173CF400770B57 /* AuthModuleFactory.swift in Sources */,
-				588691C523173CF500770B57 /* ForgotController.swift in Sources */,
+				588692CF23175D6600770B57 /* BirthdayInputHandler.swift in Sources */,
 				5886919023173CF400770B57 /* GetAllShakesResponseModel.swift in Sources */,
 				5886923D23173CF500770B57 /* OnboardingPageController.swift in Sources */,
 				5886912723173CF400770B57 /* UIDevice+Model.swift in Sources */,
 				5886912A23173CF400770B57 /* KeychainService.swift in Sources */,
 				5886914223173CF400770B57 /* Presenter.swift in Sources */,
 				588691B623173CF500770B57 /* LoggedController.swift in Sources */,
+				588692F123175DC900770B57 /* PickPhotoView.swift in Sources */,
 				5886914123173CF400770B57 /* Presentable.swift in Sources */,
 				588691B223173CF500770B57 /* UnloggedController.swift in Sources */,
+				588692F323175DCE00770B57 /* PickPhotoModel.swift in Sources */,
 				5886915D23173CF400770B57 /* OnboardingCoordinator.swift in Sources */,
 				5886918923173CF400770B57 /* PublishProcess.swift in Sources */,
 				588692A6231748D400770B57 /* SearchController.swift in Sources */,
+				585E0A812317710800F6502E /* AuthTypeModel.swift in Sources */,
 				58869272231744DB00770B57 /* SearchCoordinator.swift in Sources */,
 				5886915B23173CF400770B57 /* ApplicationCoordinator.swift in Sources */,
 				5886918523173CF400770B57 /* ValidityConditionViewModel.swift in Sources */,
 				588691B423173CF500770B57 /* LoggedModel.swift in Sources */,
+				585E0A7D231770FD00F6502E /* AuthTypeView.swift in Sources */,
 				588692882317486D00770B57 /* MenuModel.swift in Sources */,
 				5886917C23173CF400770B57 /* UserViewModel.swift in Sources */,
 				5886912823173CF400770B57 /* KeyedDecodingContainer+DateDecoding.swift in Sources */,
@@ -1427,23 +1575,30 @@
 				5886921B23173CF500770B57 /* RootInputHandler.swift in Sources */,
 				5886912C23173CF400770B57 /* CommentService.swift in Sources */,
 				5886919923173CF400770B57 /* PhoneRecord.swift in Sources */,
+				588692E723175DA800770B57 /* PasswordInputHandler.swift in Sources */,
 				5886918123173CF400770B57 /* ShakeSignatureViewModel.swift in Sources */,
 				5886925C23173CF500770B57 /* NetworkError.swift in Sources */,
 				588692A2231748C500770B57 /* SearchModel.swift in Sources */,
 				5886918023173CF400770B57 /* ShakeHistoryVersionViewModel.swift in Sources */,
 				5886912223173CF400770B57 /* DefaultsKeys.swift in Sources */,
+				588692AF2317573000770B57 /* AuthCoordinator.swift in Sources */,
 				5886916523173CF400770B57 /* ModuleFactory.swift in Sources */,
 				5886918C23173CF400770B57 /* LoginRequestModel.swift in Sources */,
+				585E0A832317725F00F6502E /* AuthType.swift in Sources */,
 				5886915E23173CF400770B57 /* OnboardingCoordinatorOutput.swift in Sources */,
 				5886914023173CF400770B57 /* ChildCoordinator.swift in Sources */,
+				585E0A73231770E100F6502E /* LoginInputHandler.swift in Sources */,
 				5886912423173CF400770B57 /* UIViewController+Alert.swift in Sources */,
 				588692962317489900770B57 /* GameInputHandler.swift in Sources */,
 				5886921C23173CF500770B57 /* RootController.swift in Sources */,
 				5886929A231748A100770B57 /* GameView.swift in Sources */,
 				5886918223173CF400770B57 /* TemplateTypeViewModel.swift in Sources */,
+				588692B8231757C800770B57 /* AuthResult.swift in Sources */,
+				585E0A7B231770F800F6502E /* AuthTypeInputHandler.swift in Sources */,
+				588692C723175D4C00770B57 /* GenderInputHandler.swift in Sources */,
 				5886928C2317487700770B57 /* MenuController.swift in Sources */,
-				588691C723173CF500770B57 /* LoginView.swift in Sources */,
 				5886915F23173CF400770B57 /* CoordinatorFactory.swift in Sources */,
+				588692E523175DA000770B57 /* EmailController.swift in Sources */,
 				5886919C23173CF400770B57 /* Contact.swift in Sources */,
 				5886919523173CF400770B57 /* FindFriendResponseModel.swift in Sources */,
 				58869268231744AE00770B57 /* MenuCoordinatorOutput.swift in Sources */,
@@ -1453,24 +1608,25 @@
 				588691B523173CF500770B57 /* LoggedInputHandler.swift in Sources */,
 				5886912E23173CF400770B57 /* UserService.swift in Sources */,
 				5886918723173CF400770B57 /* ShakeQuery.swift in Sources */,
-				588691C023173CF500770B57 /* RegisterInputHandler.swift in Sources */,
 				5886928E2317488400770B57 /* ChatsInputHandler.swift in Sources */,
 				5886912B23173CF400770B57 /* ShakeSignatureService.swift in Sources */,
 				5886919123173CF400770B57 /* LoginResponseModel.swift in Sources */,
 				5886919F23173CF400770B57 /* User.swift in Sources */,
 				5886912123173CF400770B57 /* UITextField+Validation.swift in Sources */,
+				588692D923175D8200770B57 /* NameModel.swift in Sources */,
 				588692A4231748CE00770B57 /* SearchView.swift in Sources */,
 				5886918423173CF400770B57 /* TemplateViewModel.swift in Sources */,
+				588692E923175DAD00770B57 /* PasswordView.swift in Sources */,
 				5886919423173CF400770B57 /* GetAllTemplateResponseModel.swift in Sources */,
 				58869270231744CD00770B57 /* GameCoordinatorOutput.swift in Sources */,
+				588692D723175D7E00770B57 /* NameInputHandler.swift in Sources */,
+				588692ED23175DB800770B57 /* PasswordController.swift in Sources */,
 				5886918D23173CF400770B57 /* RegisterRequestModel.swift in Sources */,
 				5886926E231744C800770B57 /* GameCoordinator.swift in Sources */,
-				588691C123173CF500770B57 /* RegisterView.swift in Sources */,
 				5886917023173CF400770B57 /* Router.swift in Sources */,
 				5886918623173CF400770B57 /* ContactRecordViewModel.swift in Sources */,
 				5886925F23173CF500770B57 /* Endpoint.swift in Sources */,
 				5886923C23173CF500770B57 /* OnboardingPageView.swift in Sources */,
-				588691C923173CF500770B57 /* LoginInputHandler.swift in Sources */,
 				5886917A23173CF400770B57 /* BaseModel.swift in Sources */,
 				5886918823173CF400770B57 /* Shake.swift in Sources */,
 				5886912623173CF400770B57 /* String+Validation.swift in Sources */,
@@ -1479,8 +1635,8 @@
 				5886923A23173CF500770B57 /* OnboardingContentModel.swift in Sources */,
 				5886928A2317487100770B57 /* MenuView.swift in Sources */,
 				5886918A23173CF400770B57 /* ShakeSignature.swift in Sources */,
+				588692BC23175B8D00770B57 /* AuthModuleFactory.swift in Sources */,
 				588692922317488D00770B57 /* ChatsView.swift in Sources */,
-				588691C323173CF500770B57 /* ForgotModel.swift in Sources */,
 				5886917B23173CF400770B57 /* BaseView.swift in Sources */,
 				5886916223173CF400770B57 /* SettingsModuleFactory.swift in Sources */,
 			);

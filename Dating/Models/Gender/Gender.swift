@@ -1,5 +1,5 @@
 //
-//  RegisterCoordinatorOutput.swift
+//  Gender.swift
 //  Dating
 //
 //  Created by Gennady  Oleynik  on 8/29/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol AuthCoordinatorOutput {
-    var finishFlow: ((AuthResult) -> Void)? { get set }
-
+enum Gender {
+    case male
+    case female
 }

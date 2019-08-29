@@ -35,13 +35,14 @@ class CoordinatorFactory {
         return coordinator
     }
     
-    static func makeAuthCoordinator(presenter: Presenter) -> Coordinator & AuthCoordinatorOutput {
-        let coordinator = AuthCoordinator(presenter: presenter)
+    static func makeAuthCoordinator(window: UIWindow) -> Coordinator & AuthCoordinatorOutput {
+        let coordinator = AuthCoordinator(window: window)
         return coordinator
     }
     
     static func makeOnboardingCoordinator(window: UIWindow) -> Coordinator & OnboardingCoordinatorOutput {
         let coordinator = OnboardingCoordinator(window: window)
+        
         return coordinator
     }
     

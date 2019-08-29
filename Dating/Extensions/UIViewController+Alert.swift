@@ -65,4 +65,19 @@ extension UIViewController {
         alert.addAction(cancelAction)
         self.present(alert, animated: true, completion: nil)
     }
+    
+    func showPhotoPicAlert(cameraHandler: @escaping () -> Void, galleryHandler: @escaping () -> Void) {
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let cameraAction = UIAlertAction(title: "Camera", style: .default) { _ in
+            cameraHandler()
+        }
+        let galleryAction = UIAlertAction(title: "Gallery", style: .default) { _ in
+            galleryHandler()
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(cameraAction)
+        alert.addAction(galleryAction)
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true, completion: nil)
+    }
 }

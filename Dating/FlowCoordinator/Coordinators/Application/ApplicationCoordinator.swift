@@ -26,7 +26,13 @@ final class ApplicationCoordinator: Coordinator {
     }
     
     func start(with option: DeepLinkOption?) {
-        runTabBar(with: option)
+        
+        if !SessionService.authorized {
+            runAuthFlow()
+        } else {
+            runTabBar(with: option)
+        }
+        
 
 //        if SessionService.firstRun {
 //            self.model.appInstalled(successHandler: { [weak self] in
@@ -79,6 +85,20 @@ final class ApplicationCoordinator: Coordinator {
         }
         
         coordinator.start(with: .gamification)
+        self.window?.makeKeyAndVisible()
+    }
+    
+    private func runAuthFlow() {
+        
+        var coordinator = CoordinatorFactory.makeAuthCoordinator(window: self.window!)
+        addDependency(coordinator)
+        
+        coordinator.finishFlow = { [weak self, weak coordinator] authResult in
+            self?.removeDependency(coordinator)
+            self?.runTabBar(with: nil)
+        }
+        
+        coordinator.start()
         self.window?.makeKeyAndVisible()
     }
     

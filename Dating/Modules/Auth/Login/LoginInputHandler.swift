@@ -1,15 +1,13 @@
 //
 //  LoginInputHandler.swift
-//  loc
+//  Dating
 //
-//  Created by oleygen ua on 1/22/19.
-//  Copyright © 2019 oleygen. All rights reserved.
+//  Created by Gennady  Oleynik  on 8/29/19.
+//  Copyright © 2019 Gennady  Oleynik . All rights reserved.
 //
 
 import Foundation
 
 protocol LoginInputHandler: TransitionInputHandler {
-    var onCompleteAuth: CoordinatorCompletionBlock? { get set }
-    var onSignUpButtonTap: CoordinatorCompletionBlock? { get set }
-    var onForgotButtonTap: CoordinatorCompletionBlock? { get set }
+    var onLoginTap: ((AuthResult) -> Void)? { get set }
 }

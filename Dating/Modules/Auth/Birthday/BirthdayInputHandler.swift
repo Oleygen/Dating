@@ -1,5 +1,5 @@
 //
-//  RegisterCoordinatorOutput.swift
+//  BirthdayInputHandler.swift
 //  Dating
 //
 //  Created by Gennady  Oleynik  on 8/29/19.
@@ -8,7 +8,6 @@
 
 import Foundation
 
-protocol AuthCoordinatorOutput {
-    var finishFlow: ((AuthResult) -> Void)? { get set }
-
+protocol BirthdayInputHandler: TransitionInputHandler {
+    var onContinueTap: (() -> Void)? { get set }
 }
