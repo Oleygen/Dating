@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
 
-        registerForPushNotifications()
+//        registerForPushNotifications()
         BackgroundService.instance.start()
         applicationCoordinator.start()
         return true

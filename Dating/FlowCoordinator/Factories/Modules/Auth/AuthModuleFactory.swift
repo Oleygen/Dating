@@ -14,7 +14,7 @@ protocol AuthModuleFactory {
     static func createBirthdayScreen() -> BirthdayInputHandler
     static func createNameScreen() -> NameInputHandler
     static func createEmailScreen() -> EmailInputHandler
-    static func createPasswordScreen() -> PasswordInputHandler
+    static func createPasswordScreen(userModel: UserNetworkModel) -> PasswordInputHandler
     static func createPickPhotoScreen() -> PickPhotoInputHandler
     static func createLoginScreen() -> LoginInputHandler
 }

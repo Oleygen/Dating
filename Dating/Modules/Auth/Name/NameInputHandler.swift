@@ -9,5 +9,5 @@
 import Foundation
 
 protocol NameInputHandler: TransitionInputHandler {
-    var onContinueTap: (() -> Void)? { get set }
+    var onChooseName: ((String) -> Void)? { get set }
 }

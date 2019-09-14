@@ -9,5 +9,5 @@
 import Foundation
 
 protocol BirthdayInputHandler: TransitionInputHandler {
-    var onContinueTap: (() -> Void)? { get set }
+    var onBirthdayPick: ((Date) -> Void)? { get set }
 }

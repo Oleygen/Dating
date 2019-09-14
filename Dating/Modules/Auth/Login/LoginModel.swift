@@ -9,5 +9,18 @@
 import Foundation
 
 class LoginModel: BaseModel {
-    
+    let networkManager = NetworkManager()
+    func performLogin(username: String, password: String, success: @escaping(UserResponseNetworkModel)->(), failure: @escaping(String)->()) {
+        let model = LoginNetworkModel()
+        model.username = username
+        model.password = password
+        networkManager.login(model: model) { (user, error) in
+            if let error = error {
+                failure(error)
+            }
+            if let user = user {
+                success(user)
+            }
+        }
+    }
 }

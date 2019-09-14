@@ -9,5 +9,6 @@
 import Foundation
 
 protocol MenuModuleFactory {
-     static func createMenuScreen()  -> MenuInputHandler
+    static func createMenuScreen()  -> MenuInputHandler
+    static func createEditProfileScreen() -> EditProfileInputHandler
 }

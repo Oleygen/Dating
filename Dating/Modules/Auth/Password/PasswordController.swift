@@ -24,7 +24,13 @@ class PasswordController: BaseController<PasswordView, PasswordModel>, PasswordI
     
     
     @objc func didClickFinishButton() {
-        self.onFinishTap?()
+        self.model.performRegistration(password: self.baseView.passwordTextField.text!, success: { (user) in
+            print(user)
+            self.onFinishTap?()
+        }) { (error) in
+            self.showAlert(title: error)
+        }
+        
     }
     @objc func didTapBaseView() {
         self.view.endEditing(true)

@@ -32,9 +32,17 @@ final class MenuCoordinator: TabbedCoordinator, MenuCoordinatorOutput {
     
     private func showMenuScreen() {
         let menuInputHandler = ModuleFactory.createMenuScreen()
+        menuInputHandler.onEditProfileTap = { [weak self] in
+            self?.showEditProfile()
+        }
+        
+        
         router.setRootModule(menuInputHandler)
     }
   
+    private func showEditProfile() {
+        let editProfileHandler = ModuleFactory.createEditProfileScreen()
+    }
     
     deinit {
         print(#function)

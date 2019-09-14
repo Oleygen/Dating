@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class NameController: BaseController<NameView, NameModel>, NameInputHandler {
-    var onContinueTap: (() -> Void)?
+    var onChooseName: ((String) -> Void)?
     override func viewDidLoad() {
         self.shouldShowBackButton = true
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class NameController: BaseController<NameView, NameModel>, NameInputHandler {
     }
     
     @objc func didClickContinueButton() {
-        self.onContinueTap?()
+        self.onChooseName?(self.baseView.nameTextField.text!)
     }
     @objc func didTapBaseView() {
         self.view.endEditing(true)

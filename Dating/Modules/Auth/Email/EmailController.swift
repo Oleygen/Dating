@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class EmailController: BaseController<EmailView, EmailModel>, EmailInputHandler {
-    var onContinueTap: (() -> Void)?
+    var onChooseEmail: ((String) -> Void)?
     
     override func viewDidLoad() {
         self.shouldShowBackButton = true
@@ -24,7 +24,7 @@ class EmailController: BaseController<EmailView, EmailModel>, EmailInputHandler 
     
     
     @objc func didClickContinueButton() {
-        self.onContinueTap?()
+        self.onChooseEmail?(self.baseView.emailTextField.text!)
     }
     
     @objc func didTapBaseView() {

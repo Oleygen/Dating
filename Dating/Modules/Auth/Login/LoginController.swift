@@ -25,7 +25,13 @@ class LoginController: BaseController<LoginView, LoginModel>, LoginInputHandler 
     
     
     @objc func didClickLoginButton() {
-        self.onLoginTap?(.success)
+        self.model.performLogin(username: self.baseView.loginTextField.text!, password: self.baseView.passwordTextField.text!, success: { (user) in
+            print(user)
+            self.onLoginTap?(.success)
+        }) { (error) in
+            self.showAlert(title: error)
+        }
+        
     }
     @objc func didTapBaseView() {
         self.view.endEditing(true)

@@ -44,9 +44,9 @@ extension ModuleFactory: AuthModuleFactory {
         let controller = EmailController(baseView: view, baseModel: model)
         return controller
     }
-    static func createPasswordScreen() -> PasswordInputHandler {
+    static func createPasswordScreen(userModel: UserNetworkModel) -> PasswordInputHandler {
         let view = PasswordView()
-        let model = PasswordModel()
+        let model = PasswordModel(userModel: userModel)
         let controller = PasswordController(baseView: view, baseModel: model)
         return controller
     }
@@ -72,6 +72,14 @@ extension ModuleFactory: MenuModuleFactory {
         let controller = MenuController(baseView: view, baseModel: model)
         return controller
     }
+    
+    static func createEditProfileScreen() -> EditProfileInputHandler {
+        let model = EditProfileModel()
+        let view = EditProfileView()
+        let controller = EditProfileController(baseView: view, baseModel: model)
+        return controller
+    }
+
 }
 
 extension ModuleFactory: SearchModuleFactory {

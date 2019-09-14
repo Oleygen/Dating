@@ -9,7 +9,7 @@
 import Foundation
 
 class BirthdayController: BaseController<BirthdayView, BirthdayModel>, BirthdayInputHandler {
-    var onContinueTap: (() -> Void)?
+    var onBirthdayPick: ((Date) -> Void)?
 
     override func viewDidLoad() {
         self.shouldShowBackButton = true
@@ -19,6 +19,6 @@ class BirthdayController: BaseController<BirthdayView, BirthdayModel>, BirthdayI
     }
     
     @objc func didClickContinueButton() {
-        self.onContinueTap?()
+        self.onBirthdayPick?(self.baseView.datePicker.date)
     }
 }

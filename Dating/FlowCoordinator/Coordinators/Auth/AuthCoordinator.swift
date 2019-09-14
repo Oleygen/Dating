@@ -13,6 +13,8 @@ final class AuthCoordinator: Coordinator, AuthCoordinatorOutput {
     private let window: UIWindow
     private let router: NavigationRouter
     
+    var userModel = UserNetworkModel()
+    
     var finishFlow: ((AuthResult) -> Void)?
     
     var rootController: UIViewController {
@@ -51,6 +53,12 @@ final class AuthCoordinator: Coordinator, AuthCoordinatorOutput {
     private func showGenderScreen() {
         let genderHandler = ModuleFactory.createGenderScreen()
         genderHandler.onPickGender = { [weak self] gender in
+            switch gender {
+            case .female:
+                self?.userModel.sex = false
+            case .male:
+                self?.userModel.sex = true
+            }
             self?.showBirthdayScreen()
         }
         
@@ -63,7 +71,8 @@ final class AuthCoordinator: Coordinator, AuthCoordinatorOutput {
     
     private func showBirthdayScreen() {
         let birthdayHandler = ModuleFactory.createBirthdayScreen()
-        birthdayHandler.onContinueTap = { [weak self] in
+        birthdayHandler.onBirthdayPick = { [weak self] date in
+            self?.userModel.age = Date().years(sinceDate: date)
             self?.showNameScreen()
         }
         birthdayHandler.onBackButtonTap = { [weak self] in
@@ -75,7 +84,8 @@ final class AuthCoordinator: Coordinator, AuthCoordinatorOutput {
     
     private func showNameScreen() {
         let nameHandler = ModuleFactory.createNameScreen()
-        nameHandler.onContinueTap = { [weak self] in
+        nameHandler.onChooseName = { [weak self] name in
+            self?.userModel.name = name
             self?.showEmailScreen()
         }
         
@@ -88,7 +98,9 @@ final class AuthCoordinator: Coordinator, AuthCoordinatorOutput {
     
     private func showEmailScreen() {
         let emailHandler = ModuleFactory.createEmailScreen()
-        emailHandler.onContinueTap = { [weak self] in
+        emailHandler.onChooseEmail = { [weak self] email in
+            self?.userModel.username = email
+            self?.userModel.email = email
             self?.showPickPhotoScreen()
         }
         
@@ -102,6 +114,7 @@ final class AuthCoordinator: Coordinator, AuthCoordinatorOutput {
     private func showPickPhotoScreen() {
         let pickPhotoHandler = ModuleFactory.createPickPhotoScreen()
         pickPhotoHandler.onContinueTap = { [weak self] in
+            
             self?.showPasswordScreen()
         }
         
@@ -112,8 +125,8 @@ final class AuthCoordinator: Coordinator, AuthCoordinatorOutput {
     }
     
     private func showPasswordScreen() {
-        let passwordHandler = ModuleFactory.createPasswordScreen()
-        passwordHandler.onFinishTap = { [weak self] in
+        let passwordHandler = ModuleFactory.createPasswordScreen(userModel: self.userModel)
+        passwordHandler.onFinishTap = { [weak self]  in
             self?.finishFlow?(.success)
         }
         

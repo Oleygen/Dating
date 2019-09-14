@@ -9,5 +9,5 @@
 import Foundation
 
 protocol MenuInputHandler: InputHandler {
-    
+    var onEditProfileTap: (()->())? { get set }
 }

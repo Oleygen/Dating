@@ -9,5 +9,5 @@
 import Foundation
 
 protocol EmailInputHandler: TransitionInputHandler {
-    var onContinueTap: (() -> Void)? { get set }
+    var onChooseEmail: ((String) -> Void)? { get set }
 }

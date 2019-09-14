@@ -10,9 +10,7 @@ import Foundation
 
 class InitialModel: BaseModel {
     
-    public func appInstalled(successHandler: @escaping SuccessHandler, failureHandler: @escaping FailureHandler) {
-        
-    }
+  
     
 //    public func setDeviceToken(successHander: @escaping SuccessHandler, failureHandler: @escaping FailureHandler) {
 //        networkClient.registerDeviceToken(successHander: successHander, failureHandler: failureHandler)
